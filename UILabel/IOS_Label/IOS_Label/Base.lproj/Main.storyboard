@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iOX-sa-Qub">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DyO-Xt-mE9">
+            <objects>
+                <navigationController id="iOX-sa-Qub" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cbh-9f-XZo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="pFO-Hy-dcw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6T-xv-HDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455" y="56"/>
+        </scene>
+        <!--IOS Label相关-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMC-rG-Fif">
+                                <rect key="frame" x="20" y="72" width="143" height="30"/>
+                                <state key="normal" title="Label根据内容自适应">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ieJ-Pa-pJ8" kind="push" id="NRP-gF-Ocy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRm-mH-kvq">
+                                <rect key="frame" x="20" y="110" width="75" height="30"/>
+                                <state key="normal" title="添加删除线">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IOm-cn-IDU" kind="push" id="Dd3-pI-9lE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qMC-rG-Fif" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Md7-0K-l4l"/>
+                            <constraint firstItem="XRm-mH-kvq" firstAttribute="top" secondItem="qMC-rG-Fif" secondAttribute="bottom" constant="8" id="TL6-7w-Zi5"/>
+                            <constraint firstItem="XRm-mH-kvq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="X7h-1F-OIU"/>
+                            <constraint firstItem="qMC-rG-Fif" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="gwn-d5-lNL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="IOS Label相关" id="8VL-oG-3S2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="56"/>
+        </scene>
+        <!--根据文字调剂Label大小-->
+        <scene sceneID="sBO-PF-Y8U">
+            <objects>
+                <viewController id="ieJ-Pa-pJ8" customClass="AutoLabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTL-9M-eZY"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8J-tc-hdW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C5N-4K-cAo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bB9-0A-uYs">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bB9-0A-uYs" firstAttribute="top" secondItem="OTL-9M-eZY" secondAttribute="bottom" id="Hs0-s8-kZn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bB9-0A-uYs" secondAttribute="trailing" constant="-16" id="V8T-qW-Zi1"/>
+                            <constraint firstItem="bB9-0A-uYs" firstAttribute="leading" secondItem="C5N-4K-cAo" secondAttribute="leadingMargin" constant="-16" id="ZPm-tz-pCR"/>
+                            <constraint firstItem="L8J-tc-hdW" firstAttribute="top" secondItem="bB9-0A-uYs" secondAttribute="bottom" id="srb-V2-xN9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="根据文字调剂Label大小" id="xQc-j4-gme"/>
+                    <connections>
+                        <outlet property="scrollView" destination="bB9-0A-uYs" id="IpB-2q-sBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Jv-O3-B6B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="56"/>
+        </scene>
+        <!--Label添加删除线-->
+        <scene sceneID="Rtr-Yz-5oL">
+            <objects>
+                <viewController id="IOm-cn-IDU" customClass="DeleteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CRc-IW-84R"/>
+                        <viewControllerLayoutGuide type="bottom" id="qCH-LM-WD9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WwM-Zb-1cZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-IB-uam" customClass="B9ZGX_Label">
+                                <rect key="frame" x="276" y="290" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Agk-IB-uam" secondAttribute="centerY" id="MKW-ve-9iN"/>
+                            <constraint firstAttribute="centerX" secondItem="Agk-IB-uam" secondAttribute="centerX" id="em6-xq-G2d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Label添加删除线" id="L62-8c-CSs"/>
+                    <connections>
+                        <outlet property="DeleteLabel" destination="Agk-IB-uam" id="ZcT-6m-HFa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ll8-Pk-cV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="789"/>
+        </scene>
+    </scenes>
+</document>
