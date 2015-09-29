@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0XR-y3-80e">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rec-fp-GTk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWR-tO-ibR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="0XR-y3-80e" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iN0-Mz-aQr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yHg-Ao-72J" kind="relationship" relationship="rootViewController" id="vvs-j6-Z70"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1020" y="226"/>
+        </scene>
+        <!--键盘各种操作-->
+        <scene sceneID="wGy-Dk-uMs">
+            <objects>
+                <viewController id="yHg-Ao-72J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cfx-SF-4cm"/>
+                        <viewControllerLayoutGuide type="bottom" id="WyG-T0-KPh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="URa-xR-xGl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvj-Od-FK7">
+                                <rect key="frame" x="16" y="72" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Da2-52-4Ao"/>
+                                    <constraint firstAttribute="height" constant="30" id="OL5-FU-dzY"/>
+                                </constraints>
+                                <state key="normal" title="注册键盘通知">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="uBy-Uf-mKW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syx-FV-6Sj">
+                                <rect key="frame" x="16" y="110" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Lq7-Zp-2w8"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y3g-rA-rdY"/>
+                                </constraints>
+                                <state key="normal" title="keyBoard和Scroll">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xw6-nu-kpD" kind="push" id="U39-Jq-PG9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbx-Rc-bgb">
+                                <rect key="frame" x="16" y="148" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YwZ-hc-ajZ"/>
+                                    <constraint firstAttribute="width" constant="120" id="l8j-mh-cKD"/>
+                                </constraints>
+                                <state key="normal" title="点击空白隐藏键盘">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qwu-WN-OCK" kind="push" id="K81-Om-LfZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lbx-Rc-bgb" firstAttribute="leading" secondItem="URa-xR-xGl" secondAttribute="leadingMargin" id="2oL-CN-wZS"/>
+                            <constraint firstItem="Syx-FV-6Sj" firstAttribute="leading" secondItem="URa-xR-xGl" secondAttribute="leadingMargin" id="BAE-4k-4DT"/>
+                            <constraint firstItem="Syx-FV-6Sj" firstAttribute="top" secondItem="vvj-Od-FK7" secondAttribute="bottom" constant="8" id="cPe-FN-M9V"/>
+                            <constraint firstItem="vvj-Od-FK7" firstAttribute="leading" secondItem="URa-xR-xGl" secondAttribute="leadingMargin" id="oRF-M8-UOm"/>
+                            <constraint firstItem="vvj-Od-FK7" firstAttribute="top" secondItem="cfx-SF-4cm" secondAttribute="bottom" constant="8" id="svJ-q1-Kke"/>
+                            <constraint firstItem="lbx-Rc-bgb" firstAttribute="top" secondItem="Syx-FV-6Sj" secondAttribute="bottom" constant="8" id="zcM-fI-CkB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="键盘各种操作" id="uX0-6P-YzV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcb-It-bv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="226"/>
+        </scene>
+        <!--键盘点击空白回缩-->
+        <scene sceneID="xM6-tE-JJt">
+            <objects>
+                <viewController id="Qwu-WN-OCK" customClass="UseTouchesBeginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YrK-p0-VnQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lol-yR-ZzV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dlV-54-xTn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="使用view的touchesBegan:" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnM-GK-t2G">
+                                <rect key="frame" x="200" y="72" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EHy-wV-s4k"/>
+                                    <constraint firstAttribute="height" constant="30" id="TDe-tT-qgS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="创建自定义的触摸手势来实现对键盘的隐藏：" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PyL-cR-FYE">
+                                <rect key="frame" x="150" y="110" width="301" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="301" id="6Il-W4-sG2"/>
+                                    <constraint firstAttribute="height" constant="30" id="VRu-ks-qBd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="UIView的Custom class为UIControl" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSf-Xq-x7H">
+                                <rect key="frame" x="179" y="148" width="243" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="Usw-Qk-kKA"/>
+                                    <constraint firstAttribute="height" constant="30" id="vkL-KT-TDt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tnM-GK-t2G" firstAttribute="top" secondItem="YrK-p0-VnQ" secondAttribute="bottom" constant="8" id="Bu9-Xu-yqv"/>
+                            <constraint firstAttribute="centerX" secondItem="tnM-GK-t2G" secondAttribute="centerX" id="DaO-HZ-xva"/>
+                            <constraint firstItem="PyL-cR-FYE" firstAttribute="top" secondItem="tnM-GK-t2G" secondAttribute="bottom" constant="8" id="Il5-AI-Od4"/>
+                            <constraint firstAttribute="centerX" secondItem="PyL-cR-FYE" secondAttribute="centerX" id="Kle-JY-ZYz"/>
+                            <constraint firstItem="JSf-Xq-x7H" firstAttribute="top" secondItem="PyL-cR-FYE" secondAttribute="bottom" constant="8" id="dnZ-kX-hbd"/>
+                            <constraint firstAttribute="centerX" secondItem="JSf-Xq-x7H" secondAttribute="centerX" id="duK-fe-GWT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="键盘点击空白回缩" id="jOr-lf-GIe"/>
+                    <connections>
+                        <outlet property="ChangeUIControl" destination="JSf-Xq-x7H" id="drK-VQ-fuY"/>
+                        <outlet property="UseGesture" destination="PyL-cR-FYE" id="nyN-ha-2vT"/>
+                        <outlet property="useTouchesBegin" destination="tnM-GK-t2G" id="Jue-ZB-l2V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3C-0F-ttE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="-450"/>
+        </scene>
+        <!--注册键盘通知-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ri-qA-jyO">
+                                <rect key="frame" x="16" y="120" width="568" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="hmM-cV-FKX"/>
+                                </connections>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-6s-LqJ">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="83C-Pb-DZX"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ri-qA-jyO" firstAttribute="top" secondItem="5F0-6s-LqJ" secondAttribute="bottom" constant="18" id="1Bj-UN-lle"/>
+                            <constraint firstItem="3ri-qA-jyO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DlZ-R1-mbN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3ri-qA-jyO" secondAttribute="bottom" constant="69" id="GUv-ZQ-PnT"/>
+                            <constraint firstItem="5F0-6s-LqJ" firstAttribute="trailing" secondItem="3ri-qA-jyO" secondAttribute="trailing" id="MP6-aI-EHe"/>
+                            <constraint firstItem="3ri-qA-jyO" firstAttribute="leading" secondItem="5F0-6s-LqJ" secondAttribute="leading" id="Qqy-3A-Rax"/>
+                            <constraint firstItem="5F0-6s-LqJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="o45-pE-O4u"/>
+                            <constraint firstItem="5F0-6s-LqJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="sz6-64-u71"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册键盘通知" id="wBx-Xw-5lj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="226"/>
+        </scene>
+        <!--键盘和和滑动视图-->
+        <scene sceneID="n3k-65-g0O">
+            <objects>
+                <viewController id="xw6-nu-kpD" customClass="ScrollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8QZ-0k-1dn"/>
+                        <viewControllerLayoutGuide type="bottom" id="pRg-TY-VX0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kN8-rc-TkK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zI-3I-tbz">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TV1-0R-iHk">
+                                        <rect key="frame" x="277" y="8" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itu-H3-SYs">
+                                        <rect key="frame" x="252" y="46" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="cg0-nJ-iet"/>
+                                            <constraint firstAttribute="height" constant="30" id="fGf-xu-flz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obw-5i-iOy">
+                                        <rect key="frame" x="277" y="626" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="itu-H3-SYs" secondAttribute="centerX" id="74H-oj-fFM"/>
+                                    <constraint firstAttribute="centerX" secondItem="obw-5i-iOy" secondAttribute="centerX" id="TVS-vs-ByS"/>
+                                    <constraint firstItem="TV1-0R-iHk" firstAttribute="top" secondItem="7zI-3I-tbz" secondAttribute="top" constant="8" id="cgh-iu-zJK"/>
+                                    <constraint firstItem="obw-5i-iOy" firstAttribute="top" secondItem="itu-H3-SYs" secondAttribute="bottom" constant="550" id="deZ-kc-svY"/>
+                                    <constraint firstAttribute="centerX" secondItem="TV1-0R-iHk" secondAttribute="centerX" id="epE-AS-8uc"/>
+                                    <constraint firstItem="itu-H3-SYs" firstAttribute="top" secondItem="TV1-0R-iHk" secondAttribute="bottom" constant="8" id="hkj-Qc-KoP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7zI-3I-tbz" firstAttribute="leading" secondItem="kN8-rc-TkK" secondAttribute="leadingMargin" constant="-16" id="F8Z-SH-S8l"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7zI-3I-tbz" secondAttribute="trailing" constant="-16" id="VJh-xg-mO8"/>
+                            <constraint firstItem="pRg-TY-VX0" firstAttribute="top" secondItem="7zI-3I-tbz" secondAttribute="bottom" id="hwJ-Bs-FJc"/>
+                            <constraint firstItem="7zI-3I-tbz" firstAttribute="top" secondItem="kN8-rc-TkK" secondAttribute="topMargin" constant="64" id="mAp-a0-exa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="键盘和和滑动视图" id="LtE-9p-rfh"/>
+                    <connections>
+                        <outlet property="scrollView" destination="7zI-3I-tbz" id="VAx-Kh-0Lo"/>
+                        <outlet property="textField" destination="itu-H3-SYs" id="ydQ-JA-Lyk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6h-0r-ukA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="965"/>
+        </scene>
+    </scenes>
+</document>

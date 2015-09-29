@@ -1,0 +1,118 @@
+/* 
+  File.strings
+  IOS_TabBar
+
+  Created by Bc_Ltf on 15/4/8.
+  Copyright (c) 2015年 Bc_ltf. All rights reserved.
+*/
+/*
+在项目中经常遇到隐藏tabBar,实力很多种方法，可以解决不同情况下问题
+
+使用中涉及到view的层次关系，下面的使用方法 1、2不做说明；在使用3、4方法时注意要在tabBar所在的rootView中调用实现（必要时使用委托，已达到所需要的目的）
+举例：A（rootView 是tabBarCtroller）；B（A的subView）；C（B通过pushViewController）
+如果想要C出现的时候将tabView隐藏（且C是全屏的，能展开到tabbar存在的位置），B显示的时候babView在显示出来
+此情况明显1、2方法不能实现了，要用3、4的方法来实现；
+实现方式：B在pushViewController的时候调用其委托函数（即B消失C出现时tabbar隐藏）
+if([delegaterespondsToSelector:@selector(hidenTabbar:)])
+{
+    [delegatehidenTabbar:YES];
+}
+在A中实现B的委托代码就是3、4；
+同样在B的viewWillAppear中也调用其委托：NO；（B显示时tabbar出现）
+-(void)viewWillAppear:(BOOL)animated
+{
+    if([delegate respondsToSelector:@selector(hidenTabbar:)])
+    {
+        [delegatehidenTabbar:NO];
+    }
+}
+
+1：//隐藏tabBar
+WebViewController *webVc = [[WebViewController alloc] init];
+webVc.hidesBottomBarWhenPushed = YES;
+[self.navigationController pushViewController:webVc animated:YES];
+webVc.hidesBottomBarWhenPushed = NO;
+[webVc release];
+
+2.系统方法    self.hidesBottomBarWhenPushed = YES;
+
+
+3:自定义tabBar时候，由tabBarController管理的
+//隐藏tabBar
+- (void) hideTabBar:(BOOL) hidden{
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0];
+    
+    for(UIView *view in self.tabBarController.view.subviews)
+    {
+        if([view isKindOfClass:[UITabBar class]])
+        {
+            if (hidden) {
+                [view setFrame:CGRectMake(view.frame.origin.x, iphone5?568:480, view.frame.size.width, view.frame.size.height)];
+            } else {
+                [view setFrame:CGRectMake(view.frame.origin.x, iphone5?568-49:480-49, view.frame.size.width, view.frame.size.height)];
+            }
+        }
+        else
+        {
+            if (hidden) {
+                [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, iphone5?568:480)];
+            } else {
+                [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width,  iphone5?568-49:480-49)];
+            }
+        }
+    }
+    
+    [UIView commitAnimations];
+}
+
+//调整子视图
+for (UIView *subView in self.view.subviews) {
+    if ([subView isKindOfClass:NSClassFromString(@"UITransitionView")]) {
+        //调整子视图的高度，UITransitionView视图为UINavitaionController的根视图
+        //            subView.frame = CGRectMake(subView.frame.origin.x, subView.frame.origin.y, subView.frame.size.width, 480);
+        
+        CGRect frame = subView.frame;
+        frame.size.height = 480;
+        subView.frame = frame;
+    }
+}
+
+4：类似方法3
+- (void)makeTabBarHidden:(BOOL)hide
+{
+    if ( [self.tabBarController.view.subviews count] < 2 )
+    {
+        return;
+    }
+    UIView *contentView;
+    
+    if ( [[self.tabBarController.view.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]] )
+    {
+        contentView = [self.tabBarController.view.subviews objectAtIndex:1];
+    }
+    else
+    {
+        contentView = [self.tabBarController.view.subviews objectAtIndex:0];
+    }
+    //    [UIView beginAnimations:@"TabbarHide" context:nil];
+    if ( hide )
+    {
+        contentView.frame = self.tabBarController.view.bounds;
+    }
+    else
+    {
+        contentView.frame = CGRectMake(self.tabBarController.view.bounds.origin.x,
+        self.tabBarController.view.bounds.origin.y,
+        self.tabBarController.view.bounds.size.width,
+        self.tabBarController.view.bounds.size.height - self.tabBarController.tabBar.frame.size.height);
+    }
+    
+    self.tabBarController.tabBar.hidden = hide;
+}
+
+*/
+
+
+
