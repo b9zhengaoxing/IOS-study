@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dv5-jP-BaR">
+                                <rect key="frame" x="121" y="20" width="94" height="29"/>
+                                <connections>
+                                    <action selector="valueChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="oBT-Kj-xcY"/>
+                                </connections>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LvQ-Ml-ges">
+                                <rect key="frame" x="16" y="20" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="OJh-8d-bix"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Pi3-td-k7f"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LvQ-Ml-ges" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="BzV-Yg-fUo"/>
+                            <constraint firstItem="Dv5-jP-BaR" firstAttribute="leading" secondItem="LvQ-Ml-ges" secondAttribute="trailing" constant="8" id="HG0-si-P1B"/>
+                            <constraint firstItem="LvQ-Ml-ges" firstAttribute="centerY" secondItem="Dv5-jP-BaR" secondAttribute="centerY" id="e3i-MN-arW"/>
+                            <constraint firstItem="LvQ-Ml-ges" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="i8l-mC-lt0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numStepper" destination="Dv5-jP-BaR" id="lhd-40-aea"/>
+                        <outlet property="numTextField" destination="LvQ-Ml-ges" id="OHC-WW-8Yc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
