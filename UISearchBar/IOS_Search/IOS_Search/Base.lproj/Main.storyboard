@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mqW-mz-WvP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMy-ra-fft">
+                                <rect key="frame" x="16" y="72" width="200" height="30"/>
+                                <state key="normal" title="放在navigationBar上的搜索栏">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zr8-eb-RAG" kind="push" id="0SG-em-PtE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IMy-ra-fft" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7c5-bJ-kmp"/>
+                            <constraint firstItem="IMy-ra-fft" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="zdf-zg-HQN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YUm-vr-yAS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="779"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c7F-xy-TMi">
+            <objects>
+                <viewController id="zr8-eb-RAG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KK2-l6-RIA"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gB-19-tQS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d36-C6-er2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="放一个透明色的View，再放Search" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzc-qK-2sA">
+                                <rect key="frame" x="170" y="289" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dzc-qK-2sA" secondAttribute="centerX" id="KYc-Hf-Xm7"/>
+                            <constraint firstAttribute="centerY" secondItem="dzc-qK-2sA" secondAttribute="centerY" id="isR-NP-rAZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tOl-ry-War">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="whA-qg-GbH">
+                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="vIp-DP-i4o">
+                                    <rect key="frame" x="0.0" y="-5" width="240" height="44"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="vIp-DP-i4o" firstAttribute="leading" secondItem="whA-qg-GbH" secondAttribute="leading" id="9gw-x8-uG7"/>
+                                <constraint firstAttribute="bottom" secondItem="vIp-DP-i4o" secondAttribute="bottom" constant="-6" id="SNq-8f-zEq"/>
+                                <constraint firstItem="vIp-DP-i4o" firstAttribute="top" secondItem="whA-qg-GbH" secondAttribute="top" constant="-5" id="eJp-Sg-5HF"/>
+                                <constraint firstAttribute="trailing" secondItem="vIp-DP-i4o" secondAttribute="trailing" id="zmr-QR-qrB"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9aI-dP-u9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="779"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IMF-sh-G6y">
+            <objects>
+                <navigationController id="mqW-mz-WvP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JMN-qm-WAr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Btd-b2-cj7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1f-KQ-DAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="779"/>
+        </scene>
+    </scenes>
+</document>
