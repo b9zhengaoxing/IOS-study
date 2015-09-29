@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E8k-U9-E6p">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="c6r-dK-cFz">
+            <objects>
+                <navigationController id="E8k-U9-E6p" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y7U-bq-cPV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="SQy-br-Ape"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ti9-ee-iSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="65"/>
+        </scene>
+        <!--展示神奇的button-->
+        <scene sceneID="jwz-4i-CXL">
+            <objects>
+                <viewController id="czj-dI-ndV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d0b-kO-eKm"/>
+                        <viewControllerLayoutGuide type="bottom" id="PgK-1O-Utj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g4X-uI-cpI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-nX-95b" customClass="APRoundedButton">
+                                <rect key="frame" x="166" y="131" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Bmj-Fl-yLq"/>
+                                    <constraint firstAttribute="width" constant="128" id="h4L-WK-AZp"/>
+                                </constraints>
+                                <state key="normal" title="BL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBL-hi-d2b" customClass="APRoundedButton">
+                                <rect key="frame" x="166" y="72" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.68627450980000004" green="0.78823529410000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="AAm-gV-Rpk"/>
+                                    <constraint firstAttribute="width" constant="128" id="q4j-Mt-qNz"/>
+                                </constraints>
+                                <state key="normal" title="TL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAa-56-SNF" customClass="APRoundedButton">
+                                <rect key="frame" x="302" y="72" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.5568627451" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="8TF-Kn-OWA"/>
+                                    <constraint firstAttribute="width" constant="128" id="wjE-gM-9Qa"/>
+                                </constraints>
+                                <state key="normal" title="TR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-Hi-T2z" customClass="APRoundedButton">
+                                <rect key="frame" x="166" y="273" width="128" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="0R4-sh-DCI"/>
+                                    <constraint firstAttribute="height" constant="51" id="o04-lQ-z7P"/>
+                                </constraints>
+                                <state key="normal" title="BL - BR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm8-FP-TLa" customClass="APRoundedButton">
+                                <rect key="frame" x="166" y="214" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="TwI-qX-wBH"/>
+                                    <constraint firstAttribute="width" constant="128" id="X0I-aN-nUS"/>
+                                </constraints>
+                                <state key="normal" title="TL - TR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApF-GU-GkN" customClass="APRoundedButton">
+                                <rect key="frame" x="166" y="342" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="b2a-P5-Hte"/>
+                                    <constraint firstAttribute="width" constant="128" id="kZm-fO-fUt"/>
+                                </constraints>
+                                <state key="normal" title="TL - BL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dI-QS-7zo" customClass="APRoundedButton">
+                                <rect key="frame" x="302" y="342" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="I0H-eH-765"/>
+                                    <constraint firstAttribute="height" constant="51" id="aGy-Eh-Dex"/>
+                                </constraints>
+                                <state key="normal" title="TR - BR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alL-o2-9uJ" customClass="APRoundedButton">
+                                <rect key="frame" x="302" y="214" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="VJM-yl-X2w"/>
+                                    <constraint firstAttribute="width" constant="128" id="bUp-ZW-yUL"/>
+                                </constraints>
+                                <state key="normal" title="TL - BL - BR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoY-PB-1h3" customClass="APRoundedButton">
+                                <rect key="frame" x="302" y="273" width="128" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="OU8-bf-nBP"/>
+                                    <constraint firstAttribute="width" constant="128" id="xdU-Mc-Psa"/>
+                                </constraints>
+                                <state key="normal" title="BL - BL - BR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pry-Gu-tyu" customClass="APRoundedButton">
+                                <rect key="frame" x="166" y="411" width="264" height="51"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="IhP-he-xtT"/>
+                                    <constraint firstAttribute="width" constant="264" id="ZRM-Cg-w5A"/>
+                                </constraints>
+                                <state key="normal" title="ALL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC3-JI-kdM" customClass="APRoundedButton">
+                                <rect key="frame" x="302" y="131" width="128" height="51"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.12549019610000001" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="4wK-nU-xYx"/>
+                                    <constraint firstAttribute="height" constant="51" id="Ybi-oj-m1p"/>
+                                </constraints>
+                                <state key="normal" title="BR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eBL-hi-d2b" firstAttribute="leading" secondItem="6uL-nX-95b" secondAttribute="leading" id="1bq-YR-cbE"/>
+                            <constraint firstItem="lC3-JI-kdM" firstAttribute="top" secondItem="xAa-56-SNF" secondAttribute="bottom" constant="8" id="2g1-T9-Oud"/>
+                            <constraint firstItem="ApF-GU-GkN" firstAttribute="top" secondItem="3dI-QS-7zo" secondAttribute="top" id="5pM-ZI-myL"/>
+                            <constraint firstItem="fTF-Hi-T2z" firstAttribute="leading" secondItem="Dm8-FP-TLa" secondAttribute="leading" id="62E-Ed-3c2"/>
+                            <constraint firstItem="Pry-Gu-tyu" firstAttribute="top" secondItem="3dI-QS-7zo" secondAttribute="bottom" constant="18" id="75u-DV-z6D"/>
+                            <constraint firstItem="xAa-56-SNF" firstAttribute="top" secondItem="d0b-kO-eKm" secondAttribute="bottom" constant="8" id="86n-T3-W8M"/>
+                            <constraint firstItem="xAa-56-SNF" firstAttribute="leading" secondItem="eBL-hi-d2b" secondAttribute="trailing" constant="8" id="8TE-Kb-G5p"/>
+                            <constraint firstItem="fTF-Hi-T2z" firstAttribute="top" secondItem="ZoY-PB-1h3" secondAttribute="top" id="EO5-hZ-eGL"/>
+                            <constraint firstItem="ApF-GU-GkN" firstAttribute="top" secondItem="fTF-Hi-T2z" secondAttribute="bottom" constant="18" id="GsN-lw-hNa"/>
+                            <constraint firstItem="ZoY-PB-1h3" firstAttribute="trailing" secondItem="3dI-QS-7zo" secondAttribute="trailing" id="PaQ-SP-moP"/>
+                            <constraint firstItem="alL-o2-9uJ" firstAttribute="trailing" secondItem="lC3-JI-kdM" secondAttribute="trailing" id="QqU-G1-I69"/>
+                            <constraint firstItem="fTF-Hi-T2z" firstAttribute="top" secondItem="Dm8-FP-TLa" secondAttribute="bottom" constant="8" id="Rph-Nc-PSo"/>
+                            <constraint firstItem="alL-o2-9uJ" firstAttribute="trailing" secondItem="ZoY-PB-1h3" secondAttribute="trailing" id="T6g-1Q-JxA"/>
+                            <constraint firstItem="fTF-Hi-T2z" firstAttribute="leading" secondItem="ApF-GU-GkN" secondAttribute="leading" id="UFP-qy-jCk"/>
+                            <constraint firstItem="Dm8-FP-TLa" firstAttribute="leading" secondItem="6uL-nX-95b" secondAttribute="leading" id="XUM-GI-1fR"/>
+                            <constraint firstItem="alL-o2-9uJ" firstAttribute="top" secondItem="Dm8-FP-TLa" secondAttribute="top" id="XWE-sQ-PlI"/>
+                            <constraint firstAttribute="centerX" secondItem="eBL-hi-d2b" secondAttribute="centerX" constant="70" id="cI2-eL-9x0"/>
+                            <constraint firstItem="eBL-hi-d2b" firstAttribute="top" secondItem="d0b-kO-eKm" secondAttribute="bottom" constant="8" id="iAw-Ks-lBe"/>
+                            <constraint firstItem="lC3-JI-kdM" firstAttribute="leading" secondItem="6uL-nX-95b" secondAttribute="trailing" constant="8" id="nRV-s5-Tr9"/>
+                            <constraint firstItem="6uL-nX-95b" firstAttribute="top" secondItem="eBL-hi-d2b" secondAttribute="bottom" constant="8" id="qwx-HP-0G2"/>
+                            <constraint firstItem="Dm8-FP-TLa" firstAttribute="top" secondItem="6uL-nX-95b" secondAttribute="bottom" constant="32" id="tsG-dc-sEV"/>
+                            <constraint firstItem="ApF-GU-GkN" firstAttribute="leading" secondItem="Pry-Gu-tyu" secondAttribute="leading" id="zzk-mZ-heV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="展示神奇的button" id="cbY-x1-qBK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrJ-iI-p5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-5E-oa7">
+                                <rect key="frame" x="16" y="64" width="159" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="1各种神奇的圆角button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="czj-dI-ndV" kind="push" id="p77-eG-Olu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-Cy-1J0">
+                                <rect key="frame" x="16" y="102" width="81" height="30"/>
+                                <state key="normal" title="2 checkBox">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qmb-Uz-5UO" kind="push" id="0xn-St-F3y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3DM-5E-oa7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="BcS-pk-vPr"/>
+                            <constraint firstItem="kPd-Cy-1J0" firstAttribute="top" secondItem="3DM-5E-oa7" secondAttribute="bottom" constant="8" id="NYy-wR-cDo"/>
+                            <constraint firstItem="kPd-Cy-1J0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="QBc-rS-txc"/>
+                            <constraint firstItem="3DM-5E-oa7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="pG2-OT-aHG"/>
+                            <constraint firstItem="3DM-5E-oa7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ph8-mR-Wvu"/>
+                            <constraint firstItem="3DM-5E-oa7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yl8-lu-tef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cvq-Qh-o9C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="65"/>
+        </scene>
+        <!--Check Box View Controller-->
+        <scene sceneID="hF4-fw-2Vn">
+            <objects>
+                <viewController id="Qmb-Uz-5UO" customClass="CheckBoxViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OWG-eb-c8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="FGC-bk-8Ek"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J6A-nX-MkT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbQ-qa-iGl">
+                                <rect key="frame" x="16" y="72" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Pkg-Fj-XQ4"/>
+                                    <constraint firstAttribute="height" constant="24" id="k2r-lM-JHG"/>
+                                </constraints>
+                                <state key="normal" image="checkBox0.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="checkBox1.png"/>
+                                <connections>
+                                    <action selector="pressCheckBox:" destination="Qmb-Uz-5UO" eventType="touchUpInside" id="MUp-7s-5se"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qbQ-qa-iGl" firstAttribute="leading" secondItem="J6A-nX-MkT" secondAttribute="leadingMargin" id="CoJ-BU-73Q"/>
+                            <constraint firstItem="qbQ-qa-iGl" firstAttribute="top" secondItem="OWG-eb-c8h" secondAttribute="bottom" constant="8" id="fMJ-0Y-N3e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SZx-ts-6wL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJz-ev-8Mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkBox0.png" width="40" height="42"/>
+        <image name="checkBox1.png" width="40" height="40"/>
+    </resources>
+</document>
