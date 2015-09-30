@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E8k-U9-E6p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E8k-U9-E6p">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -266,23 +267,29 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-5E-oa7">
-                                <rect key="frame" x="16" y="64" width="159" height="30"/>
+                                <rect key="frame" x="20" y="64" width="157" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="1各种神奇的圆角button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="czj-dI-ndV" kind="push" id="p77-eG-Olu"/>
+                                    <segue destination="czj-dI-ndV" kind="show" id="wZg-hZ-hhk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-Cy-1J0">
-                                <rect key="frame" x="16" y="102" width="81" height="30"/>
+                                <rect key="frame" x="20" y="102" width="80" height="30"/>
                                 <state key="normal" title="2 checkBox">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Qmb-Uz-5UO" kind="push" id="0xn-St-F3y"/>
+                                    <segue destination="Qmb-Uz-5UO" kind="show" id="jWL-yq-ybn"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPZ-Jz-0MB">
+                                <rect key="frame" x="20" y="140" width="74" height="30"/>
+                                <state key="normal" title="3 图文混排">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -290,8 +297,10 @@
                             <constraint firstItem="3DM-5E-oa7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="BcS-pk-vPr"/>
                             <constraint firstItem="kPd-Cy-1J0" firstAttribute="top" secondItem="3DM-5E-oa7" secondAttribute="bottom" constant="8" id="NYy-wR-cDo"/>
                             <constraint firstItem="kPd-Cy-1J0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="QBc-rS-txc"/>
+                            <constraint firstItem="dPZ-Jz-0MB" firstAttribute="top" secondItem="kPd-Cy-1J0" secondAttribute="bottom" constant="8" id="W9F-NN-Qna"/>
                             <constraint firstItem="3DM-5E-oa7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="pG2-OT-aHG"/>
                             <constraint firstItem="3DM-5E-oa7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ph8-mR-Wvu"/>
+                            <constraint firstItem="dPZ-Jz-0MB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="wl2-QB-QuV"/>
                             <constraint firstItem="3DM-5E-oa7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yl8-lu-tef"/>
                         </constraints>
                     </view>
@@ -314,7 +323,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbQ-qa-iGl">
-                                <rect key="frame" x="16" y="72" width="24" height="24"/>
+                                <rect key="frame" x="20" y="72" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="Pkg-Fj-XQ4"/>
                                     <constraint firstAttribute="height" constant="24" id="k2r-lM-JHG"/>
@@ -338,7 +347,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJz-ev-8Mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="606"/>
+            <point key="canvasLocation" x="97" y="858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rIe-aK-mVX">
+            <objects>
+                <viewController id="IL9-62-GI3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2a-BZ-Uda"/>
+                        <viewControllerLayoutGuide type="bottom" id="iKB-7g-k9Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nfQ-6m-bOk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYA-8A-Lk3">
+                                <rect key="frame" x="20" y="28" width="339" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="8dh-in-4jF"/>
+                                    <constraint firstAttribute="height" constant="106" id="Ibt-E9-bxy"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="-71"/>
+                                <inset key="imageEdgeInsets" minX="150" minY="-20" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="checkBox1.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="调节title和imageEdge可以任意摆放">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EYA-8A-Lk3" firstAttribute="leading" secondItem="nfQ-6m-bOk" secondAttribute="leadingMargin" id="9Rv-DN-i7s"/>
+                            <constraint firstItem="EYA-8A-Lk3" firstAttribute="top" secondItem="M2a-BZ-Uda" secondAttribute="bottom" constant="8" id="cIl-SX-Kc4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAB-59-PKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="858"/>
         </scene>
     </scenes>
     <resources>
