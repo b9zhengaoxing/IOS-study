@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>许嵩</key>
+	<array>
+		<string>断桥残雪</string>
+		<string>玫瑰花的葬礼</string>
+		<string>城府</string>
+		<string>清明雨上</string>
+	</array>
+	<key>周杰伦</key>
+	<array>
+		<string>听妈妈的话</string>
+		<string>双节棍</string>
+		<string>菊花台</string>
+		<string>青花瓷</string>
+		<string>千里之外</string>
+		<string>蜗牛</string>
+		<string>夜曲</string>
+	</array>
+	<key>梁静茹</key>
+	<array>
+		<string>可惜不是你</string>
+		<string>勇气</string>
+		<string>问</string>
+		<string>没有如果</string>
+	</array>
+	<key>阿杜</key>
+	<array>
+		<string>离别</string>
+		<string>差一点</string>
+	</array>
+	<key>林俊杰</key>
+	<array>
+		<string>江南</string>
+		<string>曹操</string>
+		<string>一千年一后</string>
+	</array>
+	<key>张靓颖</key>
+	<array>
+		<string>画心</string>
+		<string>好不容易</string>
+	</array>
+	<key>方大同</key>
+	<array>
+		<string>黑白</string>
+		<string>三人游</string>
+		<string>love Song</string>
+	</array>
+	<key>凤凰传奇</key>
+	<array>
+		<string>最炫名族风</string>
+		<string>荷塘月色</string>
+	</array>
+	<key>邱永传</key>
+	<array>
+		<string>十一年</string>
+	</array>
+	<key>胡夏</key>
+	<array>
+		<string>伤心童话</string>
+	</array>
+</dict>
+</plist>
