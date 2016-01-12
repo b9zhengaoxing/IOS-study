@@ -290,6 +290,9 @@
                                 <state key="normal" title="3 图文混排">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IL9-62-GI3" kind="show" id="j4W-mJ-AsJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -362,7 +365,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYA-8A-Lk3">
-                                <rect key="frame" x="20" y="28" width="339" height="106"/>
+                                <rect key="frame" x="20" y="72" width="339" height="106"/>
+                                <color key="backgroundColor" red="0.87936094580000002" green="0.75761371860000004" blue="0.66088196229999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="339" id="8dh-in-4jF"/>
                                     <constraint firstAttribute="height" constant="106" id="Ibt-E9-bxy"/>

@@ -732,6 +732,7 @@
 				83DF44AC1AD8E6EE0051210D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83DF44AD1AD8E6EE0051210D /* Build configuration list for PBXNativeTarget "IOS_CollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +741,7 @@
 				83DF44AF1AD8E6EE0051210D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

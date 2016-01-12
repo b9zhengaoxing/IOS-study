@@ -30,6 +30,7 @@ NSString *kCellID = @"cellID";
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark- UICollection Delegate
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
 {
