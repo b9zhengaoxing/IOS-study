@@ -14,6 +14,11 @@
  */
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 /**
+ *  歌曲输入框
+ */
+@property (weak, nonatomic) IBOutlet UITextField *singTextField;
+
+/**
  *  选择
  *
  *  @param sender UIButton

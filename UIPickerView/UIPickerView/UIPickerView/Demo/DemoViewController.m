@@ -62,6 +62,9 @@
     NSString *selectedState = [singerData objectAtIndex:0];
     NSArray *array = [pickerDictionary objectForKey:selectedState];
     singData=array;
+    
+    //   禁用UITextField编辑
+    _singTextField.userInteractionEnabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -161,7 +164,11 @@
         //        重新装载第二个滚轮中的值
         [self.pickerView reloadComponent:singPickerView];
     }
+    [self setTextField];
 }
+
+
+
 //设置滚轮的宽度
 -(CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
 {
@@ -169,6 +176,18 @@
         return 120;
     }
     return 200;
+}
+
+#pragma mark 在textField中显示数值
+- (void)setTextField
+{
+    //    获取选取器某一行索引值
+    NSInteger singerrow =[self.pickerView selectedRowInComponent:singerPickerView];
+    NSInteger singrow = [self.pickerView selectedRowInComponent:singPickerView];
+    //   将singerData数组中值取出
+    NSString *selectedsinger = [singerData objectAtIndex:singerrow];
+    NSString *selectedsing = [singData objectAtIndex:singrow];
+    [self.singTextField setText:[NSString stringWithFormat:@"%@-%@",selectedsinger,selectedsing]];
 }
 
 @end

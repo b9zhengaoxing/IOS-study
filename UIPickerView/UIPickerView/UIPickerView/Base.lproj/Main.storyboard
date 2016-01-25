@@ -60,24 +60,44 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-zv-jfX">
-                                <rect key="frame" x="272.5" y="288" width="55" height="30"/>
+                                <rect key="frame" x="273" y="288" width="55" height="30"/>
                                 <state key="normal" title="SELECT"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="oti-8W-XdM" eventType="touchUpInside" id="ig9-3r-T1D"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBH-vx-lfE">
+                                <rect key="frame" x="20" y="343" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-VF-b8W">
+                                <rect key="frame" x="62" y="339" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="ZEi-ds-sGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f3X-0g-T0I" firstAttribute="top" secondItem="Dgz-jx-9cj" secondAttribute="bottom" id="BCI-aa-4Lt"/>
+                            <constraint firstItem="DBH-vx-lfE" firstAttribute="centerY" secondItem="cgy-VF-b8W" secondAttribute="centerY" id="CVk-mf-0wP"/>
                             <constraint firstItem="Efx-zv-jfX" firstAttribute="centerX" secondItem="SzV-Uf-aCH" secondAttribute="centerX" id="E3T-ha-28b"/>
+                            <constraint firstItem="cgy-VF-b8W" firstAttribute="top" secondItem="f3X-0g-T0I" secondAttribute="bottom" constant="59" id="Pam-NI-yrY"/>
+                            <constraint firstItem="cgy-VF-b8W" firstAttribute="leading" secondItem="DBH-vx-lfE" secondAttribute="trailing" constant="8" symbolic="YES" id="Ts0-Xe-cXK"/>
                             <constraint firstItem="Efx-zv-jfX" firstAttribute="top" secondItem="f3X-0g-T0I" secondAttribute="bottom" constant="8" id="VDd-HA-rEw"/>
+                            <constraint firstItem="DBH-vx-lfE" firstAttribute="top" secondItem="f3X-0g-T0I" secondAttribute="bottom" constant="63" id="hua-6F-SGv"/>
+                            <constraint firstItem="DBH-vx-lfE" firstAttribute="leading" secondItem="SzV-Uf-aCH" secondAttribute="leadingMargin" id="ilo-wY-VTC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f3X-0g-T0I" secondAttribute="trailing" constant="-20" id="mNT-ty-JAY"/>
                             <constraint firstItem="f3X-0g-T0I" firstAttribute="leading" secondItem="SzV-Uf-aCH" secondAttribute="leadingMargin" constant="-20" id="rT7-51-eEw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pickerView" destination="f3X-0g-T0I" id="zVJ-bb-u54"/>
+                        <outlet property="singTextField" destination="cgy-VF-b8W" id="f1M-J0-zD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H26-mg-nq1" userLabel="First Responder" sceneMemberID="firstResponder"/>
