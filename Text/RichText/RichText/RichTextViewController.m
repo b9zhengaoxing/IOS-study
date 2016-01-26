@@ -33,6 +33,8 @@
     NSMutableAttributedString *attriString = [[NSMutableAttributedString alloc] initWithString:string];
     [attriString addAttributes:attri range:range];
     
+    richTextField.font = [UIFont fontWithName:@"Arial-BoldItalicMT" size:72];
+    
     richTextField.attributedText = [[NSAttributedString alloc] initWithAttributedString:attriString];
 
 }
