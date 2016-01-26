@@ -188,6 +188,8 @@
     NSString *selectedsinger = [singerData objectAtIndex:singerrow];
     NSString *selectedsing = [singData objectAtIndex:singrow];
     [self.singTextField setText:[NSString stringWithFormat:@"%@-%@",selectedsinger,selectedsing]];
+    
+
 }
 
 @end
