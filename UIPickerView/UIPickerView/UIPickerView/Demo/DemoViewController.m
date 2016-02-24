@@ -27,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setting];
+    
+    // 设置默认选中
+    [self.pickerView selectRow:4 inComponent:0 animated:YES];
 }
 
 - (void)viewDidUnload
