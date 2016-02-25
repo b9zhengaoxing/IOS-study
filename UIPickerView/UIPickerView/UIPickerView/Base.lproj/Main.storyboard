@@ -19,16 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGT-y4-wjF">
-                                <rect key="frame" x="20" y="64" width="41" height="30"/>
-                                <state key="normal" title="Demo"/>
+                                <rect key="frame" x="20" y="64" width="50" height="30"/>
+                                <state key="normal" title="Normal"/>
                                 <connections>
                                     <segue destination="oti-8W-XdM" kind="show" id="tmu-vH-uFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEf-MX-Thf">
+                                <rect key="frame" x="20" y="102" width="46" height="30"/>
+                                <state key="normal" title="Date"/>
+                                <connections>
+                                    <segue destination="1NO-uj-R30" kind="show" id="dfc-Ub-7yL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vEf-MX-Thf" firstAttribute="top" secondItem="lGT-y4-wjF" secondAttribute="bottom" constant="8" id="68d-Rp-e6d"/>
                             <constraint firstItem="lGT-y4-wjF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fzv-ZC-dE8"/>
+                            <constraint firstItem="vEf-MX-Thf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dDI-qS-gsf"/>
                             <constraint firstItem="lGT-y4-wjF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qxh-4w-OEd"/>
                         </constraints>
                     </view>
@@ -36,6 +45,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Date View Controller-->
+        <scene sceneID="sLe-3o-pZe">
+            <objects>
+                <viewController id="1NO-uj-R30" customClass="DateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oZa-ex-zlm"/>
+                        <viewControllerLayoutGuide type="bottom" id="jAD-NL-4hz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="51h-Lf-FMW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1nB-he-Guf">
+                                <rect key="frame" x="0.0" y="64" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="q9k-je-FoL"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="478056559.59500301">
+                                    <!--2016-02-25 01:29:19 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imi-6Z-qfc">
+                                <rect key="frame" x="279" y="304" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esj-HC-1Al">
+                                <rect key="frame" x="277" y="420" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="1NO-uj-R30" eventType="touchUpInside" id="fLg-ip-iva"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="imi-6Z-qfc" firstAttribute="centerX" secondItem="51h-Lf-FMW" secondAttribute="centerX" id="5Uq-Ld-xcu"/>
+                            <constraint firstItem="imi-6Z-qfc" firstAttribute="top" secondItem="1nB-he-Guf" secondAttribute="bottom" constant="24" id="ClL-mK-txo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1nB-he-Guf" secondAttribute="trailing" constant="-20" id="DCV-mB-X0v"/>
+                            <constraint firstItem="Esj-HC-1Al" firstAttribute="top" secondItem="imi-6Z-qfc" secondAttribute="bottom" constant="95" id="Hrh-8D-E04"/>
+                            <constraint firstItem="Esj-HC-1Al" firstAttribute="centerX" secondItem="51h-Lf-FMW" secondAttribute="centerX" id="PHX-RF-ukS"/>
+                            <constraint firstItem="1nB-he-Guf" firstAttribute="leading" secondItem="51h-Lf-FMW" secondAttribute="leadingMargin" constant="-20" id="X0E-4Y-xEW"/>
+                            <constraint firstItem="1nB-he-Guf" firstAttribute="top" secondItem="oZa-ex-zlm" secondAttribute="bottom" id="dwp-fa-WLj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePick" destination="1nB-he-Guf" id="w4s-Jh-iYB"/>
+                        <outlet property="label" destination="imi-6Z-qfc" id="nek-2f-RfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agj-Z6-whM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="536"/>
         </scene>
         <!--Demo View Controller-->
         <scene sceneID="IIc-aQ-yH9">

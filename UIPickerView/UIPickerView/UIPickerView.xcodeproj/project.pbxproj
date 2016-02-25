@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1424AB41C7E91CE00618A26 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1424AB31C7E91CE00618A26 /* DateViewController.m */; };
 		F1B109B11C44D998002DE10D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B109B01C44D998002DE10D /* main.m */; };
 		F1B109B41C44D998002DE10D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B109B31C44D998002DE10D /* AppDelegate.m */; };
 		F1B109B71C44D998002DE10D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B109B61C44D998002DE10D /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1424AB21C7E91CE00618A26 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		F1424AB31C7E91CE00618A26 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		F1B109AC1C44D998002DE10D /* UIPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B109B01C44D998002DE10D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1B109B21C44D998002DE10D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1424AB11C7E919700618A26 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				F1424AB21C7E91CE00618A26 /* DateViewController.h */,
+				F1424AB31C7E91CE00618A26 /* DateViewController.m */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
 		F1B109A31C44D998002DE10D = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +118,8 @@
 		F1B109AE1C44D998002DE10D /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				F1B109E61C44E4D5002DE10D /* Demo */,
+				F1424AB11C7E919700618A26 /* Date */,
+				F1B109E61C44E4D5002DE10D /* Normal */,
 				F1B109B21C44D998002DE10D /* AppDelegate.h */,
 				F1B109B31C44D998002DE10D /* AppDelegate.m */,
 				F1B109B51C44D998002DE10D /* ViewController.h */,
@@ -146,14 +159,14 @@
 			path = UIPickerViewUITests;
 			sourceTree = "<group>";
 		};
-		F1B109E61C44E4D5002DE10D /* Demo */ = {
+		F1B109E61C44E4D5002DE10D /* Normal */ = {
 			isa = PBXGroup;
 			children = (
 				F1B109E41C44E222002DE10D /* songInfo.plist */,
 				F1B109E71C44E59E002DE10D /* DemoViewController.h */,
 				F1B109E81C44E59E002DE10D /* DemoViewController.m */,
 			);
-			name = Demo;
+			name = Normal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 			files = (
 				F1B109B71C44D998002DE10D /* ViewController.m in Sources */,
 				F1B109B41C44D998002DE10D /* AppDelegate.m in Sources */,
+				F1424AB41C7E91CE00618A26 /* DateViewController.m in Sources */,
 				F1B109B11C44D998002DE10D /* main.m in Sources */,
 				F1B109E91C44E59E002DE10D /* DemoViewController.m in Sources */,
 			);
@@ -516,6 +530,7 @@
 				F1B109DB1C44D998002DE10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1B109DC1C44D998002DE10D /* Build configuration list for PBXNativeTarget "UIPickerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +539,7 @@
 				F1B109DE1C44D998002DE10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1B109DF1C44D998002DE10D /* Build configuration list for PBXNativeTarget "UIPickerViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +548,7 @@
 				F1B109E11C44D998002DE10D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
