@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iOX-sa-Qub">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iOX-sa-Qub">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -52,13 +52,22 @@
                                     <segue destination="IOm-cn-IDU" kind="push" id="Dd3-pI-9lE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-8g-ZIx">
+                                <rect key="frame" x="20" y="148" width="68" height="30"/>
+                                <state key="normal" title="Label基本"/>
+                                <connections>
+                                    <segue destination="amF-0s-p9w" kind="show" id="Qx2-Ky-dHG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qMC-rG-Fif" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Md7-0K-l4l"/>
                             <constraint firstItem="XRm-mH-kvq" firstAttribute="top" secondItem="qMC-rG-Fif" secondAttribute="bottom" constant="8" id="TL6-7w-Zi5"/>
                             <constraint firstItem="XRm-mH-kvq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="X7h-1F-OIU"/>
+                            <constraint firstItem="lI4-8g-ZIx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="d3g-Pw-4h7"/>
                             <constraint firstItem="qMC-rG-Fif" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="gwn-d5-lNL"/>
+                            <constraint firstItem="lI4-8g-ZIx" firstAttribute="top" secondItem="XRm-mH-kvq" secondAttribute="bottom" constant="8" id="paD-Ki-Ggv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="IOS Label相关" id="8VL-oG-3S2"/>
@@ -66,6 +75,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="221" y="56"/>
+        </scene>
+        <!--Base View Controller-->
+        <scene sceneID="QD7-1g-iym">
+            <objects>
+                <viewController id="amF-0s-p9w" customClass="BaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2a-fN-Red"/>
+                        <viewControllerLayoutGuide type="bottom" id="F2o-fh-Ezh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZWz-1m-T5W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFP-sx-ded" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="984"/>
         </scene>
         <!--根据文字调剂Label大小-->
         <scene sceneID="sBO-PF-Y8U">
@@ -112,7 +139,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-IB-uam" customClass="B9ZGX_Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-IB-uam" customClass="B9ZGX_Label">
                                 <rect key="frame" x="276" y="290" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

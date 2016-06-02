@@ -17,6 +17,7 @@
 		83EB47A21AD3CE890029B07D /* AutoLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB47A11AD3CE890029B07D /* AutoLabelViewController.m */; };
 		83F08A841AD6771B00685D80 /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F08A831AD6771B00685D80 /* DeleteViewController.m */; };
 		83F08A871AD67DC700685D80 /* B9ZGX_Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F08A861AD67DC700685D80 /* B9ZGX_Label.m */; };
+		F14ED1611CFEC118009C0C50 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14ED1601CFEC118009C0C50 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		83F08A831AD6771B00685D80 /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
 		83F08A851AD67DC700685D80 /* B9ZGX_Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B9ZGX_Label.h; sourceTree = "<group>"; };
 		83F08A861AD67DC700685D80 /* B9ZGX_Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B9ZGX_Label.m; sourceTree = "<group>"; };
+		F14ED15F1CFEC118009C0C50 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F14ED1601CFEC118009C0C50 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		83EB47781AD3C72B0029B07D /* IOS_Label */ = {
 			isa = PBXGroup;
 			children = (
+				F14ED15E1CFEC009009C0C50 /* Label基本功能 */,
 				83F08A811AD6770300685D80 /* 添加删除线 */,
 				83EB479F1AD3CE5E0029B07D /* 调节大小 */,
 				83EB477D1AD3C72B0029B07D /* AppDelegate.h */,
@@ -148,6 +152,15 @@
 				83F08A861AD67DC700685D80 /* B9ZGX_Label.m */,
 			);
 			name = "添加删除线";
+			sourceTree = "<group>";
+		};
+		F14ED15E1CFEC009009C0C50 /* Label基本功能 */ = {
+			isa = PBXGroup;
+			children = (
+				F14ED15F1CFEC118009C0C50 /* BaseViewController.h */,
+				F14ED1601CFEC118009C0C50 /* BaseViewController.m */,
+			);
+			name = "Label基本功能";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +268,7 @@
 				83EB47821AD3C72B0029B07D /* ViewController.m in Sources */,
 				83EB477F1AD3C72B0029B07D /* AppDelegate.m in Sources */,
 				83EB477C1AD3C72B0029B07D /* main.m in Sources */,
+				F14ED1611CFEC118009C0C50 /* BaseViewController.m in Sources */,
 				83F08A841AD6771B00685D80 /* DeleteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +328,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qiyi wang (MV32ZKYK7T)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -355,7 +369,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qiyi wang (MV32ZKYK7T)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
