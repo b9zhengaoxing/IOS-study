@@ -59,6 +59,7 @@
 		B43A74F81A5BBAE4006B0F46 /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = B43A74F71A5BBAE4006B0F46 /* team.plist */; };
 		B43A74FB1A5BD055006B0F46 /* SectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B43A74FA1A5BD054006B0F46 /* SectionTableViewController.m */; };
 		B43A74FD1A5BD34F006B0F46 /* team_dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = B43A74FC1A5BD34F006B0F46 /* team_dictionary.plist */; };
+		F1C74F7D1D05151E00028C7E /* AddDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C74F7C1D05151E00028C7E /* AddDeleteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,8 @@
 		B43A74FA1A5BD054006B0F46 /* SectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionTableViewController.m; sourceTree = "<group>"; };
 		B43A74FC1A5BD34F006B0F46 /* team_dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team_dictionary.plist; sourceTree = "<group>"; };
 		DEAEA13C21E41312788536A1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C74F7B1D05151E00028C7E /* AddDeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDeleteViewController.h; sourceTree = "<group>"; };
+		F1C74F7C1D05151E00028C7E /* AddDeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDeleteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 				F164F9A41BBA6D0000ABE73D /* 自定义单元格 */,
 				83F08A441AD6141D00685D80 /* 点击跳转 */,
 				83F80ACA1AD5071C001A76CC /* 下拉刷新的实现 */,
+				F13EEC621CFFE50400F74D3D /* 增加删除 */,
+				F13EEC631CFFE67900F74D3D /* 移动单元格 */,
 				B43A74901A5BA6EA006B0F46 /* AppDelegate.h */,
 				B43A74911A5BA6EA006B0F46 /* AppDelegate.m */,
 				B43A74931A5BA6EA006B0F46 /* ViewController.h */,
@@ -325,6 +330,22 @@
 			);
 			name = picture;
 			path = "IOS table1 type";
+			sourceTree = "<group>";
+		};
+		F13EEC621CFFE50400F74D3D /* 增加删除 */ = {
+			isa = PBXGroup;
+			children = (
+				F1C74F7B1D05151E00028C7E /* AddDeleteViewController.h */,
+				F1C74F7C1D05151E00028C7E /* AddDeleteViewController.m */,
+			);
+			name = "增加删除";
+			sourceTree = "<group>";
+		};
+		F13EEC631CFFE67900F74D3D /* 移动单元格 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "移动单元格";
 			sourceTree = "<group>";
 		};
 		F164F9A11BBA6BD000ABE73D /* 普通表+悬浮窗 */ = {
@@ -545,6 +566,7 @@
 				B43A74B51A5BB5DF006B0F46 /* CommonTableViewController.m in Sources */,
 				83F08A471AD614BC00685D80 /* Jump1ViewController.m in Sources */,
 				921614291A738C1300355CA6 /* CustomTableViewCell.m in Sources */,
+				F1C74F7D1D05151E00028C7E /* AddDeleteViewController.m in Sources */,
 				B43A748F1A5BA6EA006B0F46 /* main.m in Sources */,
 				83F08A4A1AD614D100685D80 /* Jump2ViewController.m in Sources */,
 			);
