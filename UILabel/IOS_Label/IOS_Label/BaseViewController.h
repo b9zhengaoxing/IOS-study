@@ -10,6 +10,11 @@
 
 @interface BaseViewController : UIViewController
 
-@property(nonatomic)UILabel * msgTipLabel;
+//基础Label
+@property(nonatomic,strong) UILabel * msgTipLabel;
+
+//富文本
+@property(nonatomic,strong) UILabel * richTextLabel;
+
 
 @end

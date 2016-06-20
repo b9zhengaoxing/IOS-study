@@ -73,6 +73,10 @@ UIFont *font = [UIFont boldSystemFontOfSize:(CGFloat)];//默认大小粗体字
 ```
 
 # UITextField
+// placeHold 颜色
+UIColor *color = [UIColor whiteColor];
+self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"用户名" attributes:@{NSForegroundColorAttributeName: color}];
+
 # UITextView
 [UITextField](http://www.cnblogs.com/chenxiangxi/p/3642576.html)
 
