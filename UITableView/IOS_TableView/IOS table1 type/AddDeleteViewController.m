@@ -210,12 +210,19 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     return  YES;
 }
 
-#pragma mark -- UITextFieldDelegate委托方法,避免键盘遮挡文本框
+#pragma mark -- UITextFieldDelegate委托方法,避免键盘遮挡文本框  
+
 - (void) textFieldDidBeginEditing:(UITextField *)textField {
+    //移动Cell
+    //@ 当前Cell行高
+    //@ TableView整体偏移上去
     UITableViewCell *cell = (UITableViewCell*)textField.superview.superview.superview;
     [self.tableView setContentOffset:CGPointMake(0.0, cell.frame.origin.y) animated:YES];
     
 }
+
+
+
 
 
 @end

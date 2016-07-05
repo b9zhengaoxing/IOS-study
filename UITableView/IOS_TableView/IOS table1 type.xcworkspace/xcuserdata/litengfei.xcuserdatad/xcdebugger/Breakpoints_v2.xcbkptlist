@@ -67,5 +67,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS table1 type/CustomTableViewCell.m"
+            timestampString = "489394906.39819"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-shakeImage"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CustomTableViewCell shakeImage]"
+                  moduleName = "IOS table1 type"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/litengfei/Documents/Code/IOS-UI/UITableView/IOS_TableView/IOS%20table1%20type/CustomTableViewCell.m"
+                  timestampString = "489394906.41653"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[CustomTableViewCell shakeImage]_block_invoke"
+                  moduleName = "IOS table1 type"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/litengfei/Documents/Code/IOS-UI/UITableView/IOS_TableView/IOS%20table1%20type/CustomTableViewCell.m"
+                  timestampString = "489394906.417036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
