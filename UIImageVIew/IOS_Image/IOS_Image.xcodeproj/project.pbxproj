@@ -16,6 +16,7 @@
 		83F80B691AD521AD001A76CC /* IOS_ImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F80B681AD521AD001A76CC /* IOS_ImageTests.m */; };
 		83F80B781AD52609001A76CC /* B9XGX_RoundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F80B771AD52609001A76CC /* B9XGX_RoundImageView.m */; };
 		83F80B7B1AD5283D001A76CC /* text.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83F80B7A1AD5283D001A76CC /* text.jpeg */; };
+		F15565CC1D2BCCAF004B93C2 /* PartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F15565CB1D2BCCAF004B93C2 /* PartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		83F80B761AD52609001A76CC /* B9XGX_RoundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B9XGX_RoundImageView.h; sourceTree = "<group>"; };
 		83F80B771AD52609001A76CC /* B9XGX_RoundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B9XGX_RoundImageView.m; sourceTree = "<group>"; };
 		83F80B7A1AD5283D001A76CC /* text.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text.jpeg; sourceTree = "<group>"; };
+		F15565CA1D2BCCAF004B93C2 /* PartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartViewController.h; sourceTree = "<group>"; };
+		F15565CB1D2BCCAF004B93C2 /* PartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		83F80B4B1AD521AC001A76CC /* IOS_Image */ = {
 			isa = PBXGroup;
 			children = (
+				F15565C91D2BCC5D004B93C2 /* 局部拉伸 */,
 				83F80B751AD525C3001A76CC /* 封装圆角 */,
 				83F80B501AD521AC001A76CC /* AppDelegate.h */,
 				83F80B511AD521AC001A76CC /* AppDelegate.m */,
@@ -141,6 +145,15 @@
 				83F80B7A1AD5283D001A76CC /* text.jpeg */,
 			);
 			name = Picture;
+			sourceTree = "<group>";
+		};
+		F15565C91D2BCC5D004B93C2 /* 局部拉伸 */ = {
+			isa = PBXGroup;
+			children = (
+				F15565CA1D2BCCAF004B93C2 /* PartViewController.h */,
+				F15565CB1D2BCCAF004B93C2 /* PartViewController.m */,
+			);
+			name = "局部拉伸";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +260,7 @@
 				83F80B781AD52609001A76CC /* B9XGX_RoundImageView.m in Sources */,
 				83F80B551AD521AC001A76CC /* ViewController.m in Sources */,
 				83F80B521AD521AC001A76CC /* AppDelegate.m in Sources */,
+				F15565CC1D2BCCAF004B93C2 /* PartViewController.m in Sources */,
 				83F80B4F1AD521AC001A76CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +452,7 @@
 				83F80B6E1AD521AD001A76CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F80B6F1AD521AD001A76CC /* Build configuration list for PBXNativeTarget "IOS_ImageTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +461,7 @@
 				83F80B711AD521AD001A76CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 成为第一响应者
+    [self.useTouchesBegin becomeFirstResponder];
     [self createGesture];
 }
 

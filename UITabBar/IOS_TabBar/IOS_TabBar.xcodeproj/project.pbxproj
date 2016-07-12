@@ -56,6 +56,7 @@
 		83F80A671AD4C86E001A76CC /* phonecall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phonecall.png; path = picture/phonecall.png; sourceTree = "<group>"; };
 		83F80A701AD4C9B1001A76CC /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
 		83F80A711AD4C9B1001A76CC /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		F1B18F0E1D2E470100598FD5 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		83F80A2B1AD4B9C7001A76CC = {
 			isa = PBXGroup;
 			children = (
+				F1B18F0E1D2E470100598FD5 /* Reveal.framework */,
 				83F80A631AD4C85F001A76CC /* Picture */,
 				83F80A361AD4B9C7001A76CC /* IOS_TabBar */,
 				83F80A501AD4B9C7001A76CC /* IOS_TabBarTests */,
@@ -399,8 +401,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IOS_TabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -409,8 +425,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IOS_TabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -468,6 +498,7 @@
 				83F80A591AD4B9C7001A76CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F80A5A1AD4B9C7001A76CC /* Build configuration list for PBXNativeTarget "IOS_TabBarTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +507,7 @@
 				83F80A5C1AD4B9C7001A76CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

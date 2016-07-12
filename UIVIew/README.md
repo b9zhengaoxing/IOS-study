@@ -41,3 +41,30 @@ CGRect rc = [btn.superview convertRect:btn.frame toView:self.view];
 或
 CGRect rc = [self.view convertRect:btn.frame fromView:btn.superview];
 ```
+
+
+
+# 找到superView
+TableView中，由Cell找到TableView可以通过superView来找
+往往是坑
+
+```
+UIButton * view = _rightBtn;
+// 循环找父视图，找到TableView为止
+while (view != nil && ![view isKindOfClass:[QYTableView class]]) {
+    view = [view superview];
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
