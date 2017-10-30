@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    NSMutableDictionary * _preRollAdsDictionary;
+}
 
 @end
 
@@ -17,6 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _preRollAdsDictionary = [[NSMutableDictionary alloc]init];
+    if (_preRollAdsDictionary==nil || ![_preRollAdsDictionary isKindOfClass:[NSDictionary class]]) {
+        return;
+    }
+    NSDictionary *tmpDic = [NSDictionary dictionaryWithDictionary:_preRollAdsDictionary];
 }
 
 - (void)didReceiveMemoryWarning {

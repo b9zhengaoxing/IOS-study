@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"checkBox0.png"] forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(100, 100, 30, 30)];
+    [self.view addSubview:button];
 }
 
 - (void)didReceiveMemoryWarning {

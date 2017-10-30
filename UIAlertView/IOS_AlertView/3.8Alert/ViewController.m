@@ -36,10 +36,29 @@
                                                      message:@"出事啦"
                                                     delegate:self
                                            cancelButtonTitle:@"没事"
-                                           otherButtonTitles:@"知道了", nil];
+                                           otherButtonTitles:@"知道了",nil];
     
     [alertView show];
     
+}
+
+/**
+ *  调节字体颜色
+ *
+ *  @param sender button
+ */
+- (void)willPresentAlertView:(UIAlertView *)alertView
+{
+    // 遍历 UIAlertView 所包含的所有控件
+    for (UIView *tempView in alertView.subviews) {
+        
+        if ([tempView isKindOfClass:[UIButton class]]) {
+            
+            UIButton *tempBtn = (UIButton *) tempView;
+            NSLog(@"tempLabel : %@", tempBtn.titleLabel.text);
+            [tempBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
+    }
 }
 
 /**
@@ -53,6 +72,8 @@
     int a=(int)buttonIndex;
     NSLog(@"AlertView%i",a);
 }
+
+
 
 
 #pragma mark- actionSheet
@@ -69,6 +90,10 @@
                                             otherButtonTitles:@"新浪微博",@"腾讯", nil];
     [action showInView:self.view];
 }
+
+
+
+
 
 /**
  *  UIActionSheetDelegate

@@ -18,6 +18,8 @@
 		83F80B221AD518E6001A76CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83F80B201AD518E6001A76CC /* LaunchScreen.xib */; };
 		83F80B2E1AD518E6001A76CC /* IOS_ButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F80B2D1AD518E6001A76CC /* IOS_ButtonTests.m */; };
 		83F80B3A1AD51E22001A76CC /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F80B391AD51E22001A76CC /* APRoundedButton.m */; };
+		F147B4C01D4F46CC00751397 /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F147B4BF1D4F46CC00751397 /* ImageTextViewController.m */; };
+		F147B4C61D4F4B4500751397 /* UIButton+ImageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F147B4C51D4F4B4500751397 /* UIButton+ImageTitleStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		83F80B2D1AD518E6001A76CC /* IOS_ButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_ButtonTests.m; sourceTree = "<group>"; };
 		83F80B381AD51E22001A76CC /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		83F80B391AD51E22001A76CC /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
+		F147B4BE1D4F46CC00751397 /* ImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextViewController.h; sourceTree = "<group>"; };
+		F147B4BF1D4F46CC00751397 /* ImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextViewController.m; sourceTree = "<group>"; };
+		F147B4C41D4F4B4500751397 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
+		F147B4C51D4F4B4500751397 /* UIButton+ImageTitleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleStyle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			children = (
 				83A622561AD76C3600BC7BAF /* checkBox */,
 				83F80B371AD51E14001A76CC /* 圆角Button */,
+				F147B4BD1D4F457700751397 /* 图文混排 */,
 				83F80B151AD518E6001A76CC /* AppDelegate.h */,
 				83F80B161AD518E6001A76CC /* AppDelegate.m */,
 				83F80B181AD518E6001A76CC /* ViewController.h */,
@@ -157,6 +164,17 @@
 				83F80B391AD51E22001A76CC /* APRoundedButton.m */,
 			);
 			name = "圆角Button";
+			sourceTree = "<group>";
+		};
+		F147B4BD1D4F457700751397 /* 图文混排 */ = {
+			isa = PBXGroup;
+			children = (
+				F147B4BE1D4F46CC00751397 /* ImageTextViewController.h */,
+				F147B4BF1D4F46CC00751397 /* ImageTextViewController.m */,
+				F147B4C41D4F4B4500751397 /* UIButton+ImageTitleStyle.h */,
+				F147B4C51D4F4B4500751397 /* UIButton+ImageTitleStyle.m */,
+			);
+			name = "图文混排";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +226,7 @@
 				TargetAttributes = {
 					83F80B0D1AD518E6001A76CC = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 5P6ZJGTG2P;
 					};
 					83F80B261AD518E6001A76CC = {
 						CreatedOnToolsVersion = 6.1;
@@ -264,6 +283,8 @@
 				83F80B1A1AD518E6001A76CC /* ViewController.m in Sources */,
 				83F80B171AD518E6001A76CC /* AppDelegate.m in Sources */,
 				83A622591AD76C6A00BC7BAF /* CheckBoxViewController.m in Sources */,
+				F147B4C61D4F4B4500751397 /* UIButton+ImageTitleStyle.m in Sources */,
+				F147B4C01D4F46CC00751397 /* ImageTextViewController.m in Sources */,
 				83F80B3A1AD51E22001A76CC /* APRoundedButton.m in Sources */,
 				83F80B141AD518E6001A76CC /* main.m in Sources */,
 			);
@@ -324,8 +345,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -367,8 +388,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -391,9 +412,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IOS_Button/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -401,9 +430,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiaoyong zhang (5G82MZ7KXN)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = IOS_Button/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoyong zhang (M9REPQ7X8A)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -430,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoyong zhang (M9REPQ7X8A)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

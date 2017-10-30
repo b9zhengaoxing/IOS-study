@@ -17,6 +17,7 @@
 		83EB47A21AD3CE890029B07D /* AutoLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EB47A11AD3CE890029B07D /* AutoLabelViewController.m */; };
 		83F08A841AD6771B00685D80 /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F08A831AD6771B00685D80 /* DeleteViewController.m */; };
 		83F08A871AD67DC700685D80 /* B9ZGX_Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F08A861AD67DC700685D80 /* B9ZGX_Label.m */; };
+		F1283A841F1DB23B004176B6 /* UILabel+String.m in Sources */ = {isa = PBXBuildFile; fileRef = F1283A831F1DB23B004176B6 /* UILabel+String.m */; };
 		F14ED1611CFEC118009C0C50 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14ED1601CFEC118009C0C50 /* BaseViewController.m */; };
 		F153F6591D13A70000CF8F28 /* 图片.png in Resources */ = {isa = PBXBuildFile; fileRef = F153F6581D13A70000CF8F28 /* 图片.png */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,8 @@
 		83F08A831AD6771B00685D80 /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
 		83F08A851AD67DC700685D80 /* B9ZGX_Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B9ZGX_Label.h; sourceTree = "<group>"; };
 		83F08A861AD67DC700685D80 /* B9ZGX_Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B9ZGX_Label.m; sourceTree = "<group>"; };
+		F1283A821F1DB23B004176B6 /* UILabel+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+String.h"; sourceTree = "<group>"; };
+		F1283A831F1DB23B004176B6 /* UILabel+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+String.m"; sourceTree = "<group>"; };
 		F14ED15F1CFEC118009C0C50 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F14ED1601CFEC118009C0C50 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		F153F6581D13A70000CF8F28 /* 图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片.png"; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		83EB47781AD3C72B0029B07D /* IOS_Label */ = {
 			isa = PBXGroup;
 			children = (
+				F1283A7E1F1DB1C1004176B6 /* 设置行距 */,
 				F14ED15E1CFEC009009C0C50 /* Label基本功能 */,
 				83F08A811AD6770300685D80 /* 添加删除线 */,
 				83EB479F1AD3CE5E0029B07D /* 调节大小 */,
@@ -154,6 +158,15 @@
 				83F08A861AD67DC700685D80 /* B9ZGX_Label.m */,
 			);
 			name = "添加删除线";
+			sourceTree = "<group>";
+		};
+		F1283A7E1F1DB1C1004176B6 /* 设置行距 */ = {
+			isa = PBXGroup;
+			children = (
+				F1283A821F1DB23B004176B6 /* UILabel+String.h */,
+				F1283A831F1DB23B004176B6 /* UILabel+String.m */,
+			);
+			name = "设置行距";
 			sourceTree = "<group>";
 		};
 		F14ED15E1CFEC009009C0C50 /* Label基本功能 */ = {
@@ -270,6 +283,7 @@
 				83EB47A21AD3CE890029B07D /* AutoLabelViewController.m in Sources */,
 				83F08A871AD67DC700685D80 /* B9ZGX_Label.m in Sources */,
 				83EB47821AD3C72B0029B07D /* ViewController.m in Sources */,
+				F1283A841F1DB23B004176B6 /* UILabel+String.m in Sources */,
 				83EB477F1AD3C72B0029B07D /* AppDelegate.m in Sources */,
 				83EB477C1AD3C72B0029B07D /* main.m in Sources */,
 				F14ED1611CFEC118009C0C50 /* BaseViewController.m in Sources */,
