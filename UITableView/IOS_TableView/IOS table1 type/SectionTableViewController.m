@@ -41,6 +41,8 @@
     
     // 设置title
     self.title=SECTIONTABLETITLE;
+    
+    [self.tableView setBackgroundColor:[UIColor blackColor]];
 }
 
 /*--------------------------------------班级点名---------------------------------------*/
@@ -57,6 +59,7 @@
     
     return [arrayListName objectAtIndex:section];
 }
+
 
 // 第几组有几个人
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -80,6 +83,11 @@
     NSString *stringTmp=[arrayListName objectAtIndex:indexPath.section];
     cell.textLabel.text=[[dicData objectForKey:stringTmp] objectAtIndex:indexPath.row];
     
+    //错误原因:contentView自动适配了safeArea
+//    [cell.contentView setBackgroundColor:[UIColor blueColor]];
+    
+    [cell.backgroundView setBackgroundColor:[UIColor blueColor]];
+
     return cell;
 }
 
@@ -88,6 +96,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
+}
+
+
+#pragma mark - iPhone6X 适配
+
+-(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
+    UITableViewHeaderFooterView * header = (UITableViewHeaderFooterView*)view;
+    UIFont  * font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    UIColor * color = [UIColor greenColor];
+    
+    [header.textLabel setFont:font];
+    
+    //错误原因:contentView自动适配了safeArea
+//    [header.contentView setBackgroundColor:color];
+    
+    [header.backgroundView setBackgroundColor:color];
 }
 
 
