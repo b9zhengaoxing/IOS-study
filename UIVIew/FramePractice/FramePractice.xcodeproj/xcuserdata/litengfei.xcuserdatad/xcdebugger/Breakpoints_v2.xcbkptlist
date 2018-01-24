@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOS_Label/ViewController.m"
-            timestampString = "524066036.477427"
+            filePath = "FramePractice/Class/Demo1ViewController.m"
+            timestampString = "538048500.7968481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-createDemoView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

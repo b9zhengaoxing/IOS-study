@@ -83,6 +83,7 @@
     // @正常的是 SystemFontOfSize
     // @斜体字 italicSystemFontOfSize
     label1.font = [UIFont boldSystemFontOfSize:20];
+//    label1.numberOfLines = 2
     
     //设置文字颜色
     label1.textColor = [UIColor orangeColor];
@@ -103,7 +104,7 @@
     label4.adjustsFontSizeToFitWidth = YES;
     
     //设置label的行数
-    label5.numberOfLines = 2;
+    label5.numberOfLines = 1;
     
     //设置高亮
     label6.highlighted = YES;

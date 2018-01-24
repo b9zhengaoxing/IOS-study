@@ -99,6 +99,8 @@
 //    cell.accessoryType=UITableViewCellAccessoryDetailButton;
 //    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
 //    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    cell.userInteractionEnabled = NO;
+
     
     return cell;
 }

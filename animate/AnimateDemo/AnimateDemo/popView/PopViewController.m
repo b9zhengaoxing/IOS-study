@@ -108,7 +108,7 @@
 - (void)showPopAnimation:(UIView*)aView {
     //展示动画
     CGRect des_frame = aView.frame;
-    CGPoint a_point = CGPointMake(1, 0);
+    CGPoint a_point = CGPointMake(0.5, 0.5); //控制位置
     aView.alpha = 0.0;
     aView.layer.anchorPoint = a_point;
     aView.layer.position = CGPointMake(des_frame.origin.x+a_point.x*des_frame.size.width, des_frame.origin.y+a_point.y*des_frame.size.height);
