@@ -512,6 +512,7 @@
 				F17685AE1C570D5300FC6E62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F17685AF1C570D5300FC6E62 /* Build configuration list for PBXNativeTarget "RichTextTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				F17685B11C570D5300FC6E62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F17685B21C570D5300FC6E62 /* Build configuration list for PBXNativeTarget "RichTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				F17685B41C570D5300FC6E62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

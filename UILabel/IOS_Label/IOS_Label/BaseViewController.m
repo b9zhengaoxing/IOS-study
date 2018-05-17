@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "NSString+Size.h"
 
 @implementation BaseViewController
 /*
@@ -83,7 +84,6 @@
     // @正常的是 SystemFontOfSize
     // @斜体字 italicSystemFontOfSize
     label1.font = [UIFont boldSystemFontOfSize:20];
-//    label1.numberOfLines = 2
     
     //设置文字颜色
     label1.textColor = [UIColor orangeColor];
@@ -159,7 +159,7 @@
     [self.view addSubview:_msgTipLabel];
     
     // 文字
-    [_msgTipLabel setText:@"基本label"];
+    [_msgTipLabel setText:@"圆角Label"];
     
     // 颜色
     [_msgTipLabel setBackgroundColor:[UIColor blueColor]];
@@ -173,6 +173,11 @@
     // 设置圆角
     _msgTipLabel.layer.cornerRadius = 6;
     _msgTipLabel.layer.masksToBounds = YES;
+    
+    //测试代码
+    NSString*text =@"hdsfaajjkdlsakdsahdsjkjksdaljdkwos斯蒂芬妮圣诞快乐方能大量数据凯丰大厦浪费不带手机";
+    CGSize  textSize = [NSString   sizeWithString:text  andFont:[UIFont  systemFontOfSize:25]   andMaxSize:CGSizeMake(MAXFLOAT,MAXFLOAT)];
+    NSLog(@"%@",NSStringFromCGSize(textSize));
 }
 
 // 图文混排
