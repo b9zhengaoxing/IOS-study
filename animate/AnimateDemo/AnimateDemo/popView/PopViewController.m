@@ -28,7 +28,7 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark -- action
+#pragma mark - action
 
 /**
  点击弹窗upDown
@@ -62,7 +62,43 @@
     [self showPopAnimation:mtGuideBtn];
 }
 
-#pragma mark -- Animate
+#pragma mark - create remove
+
+- (void)createMiTingGuideView:(CGPoint)tipBtnOrigin
+{
+    UIButton *mtGuideTipBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    mtGuideTipBtn.frame = CGRectMake(tipBtnOrigin.x, tipBtnOrigin.y, MiTingGuideWidth, MiTingGuideHeight);
+    mtGuideTipBtn.backgroundColor = [UIColor clearColor];
+    [mtGuideTipBtn setImage:[UIImage imageNamed:@"push_miting_guide_iphone.png"] forState:UIControlStateNormal];
+    [mtGuideTipBtn addTarget:self action:@selector(removeMiTingGuideView) forControlEvents:UIControlEventTouchUpInside];
+    mtGuideTipBtn.tag = kMiTingGuideViewTag;
+
+    [self.view addSubview:mtGuideTipBtn];
+    [self.view bringSubviewToFront:mtGuideTipBtn];
+
+    //10秒后自动消失
+    [self performSelector:@selector(removeMiTingGuideView) withObject:self afterDelay:10];
+}
+
+-(void)removeMiTingGuideView{
+    UIView *mtGuideBtn = [self.view viewWithTag:kMiTingGuideViewTag];
+    if (mtGuideBtn && [mtGuideBtn isKindOfClass:[UIButton class]]) {
+        [UIView animateWithDuration:0.35 animations:^{
+            mtGuideBtn.alpha = 0.0;
+            mtGuideBtn.transform = CGAffineTransformMakeScale(0.3, 0.3);
+
+        } completion:^(BOOL finished) {
+            if (mtGuideBtn) {
+                if ([mtGuideBtn superview]) {
+                    [mtGuideBtn removeFromSuperview];
+                }
+            }
+        }];
+    }
+}
+
+
+#pragma mark - Animate
 
 /**
  上线颤动,动画
@@ -120,42 +156,6 @@
     } completion:^(BOOL finished) {
         //啥也没干
     }];
-}
-
-
-#pragma mark -- 初始化方法
-
-- (void)createMiTingGuideView:(CGPoint)tipBtnOrigin
-{
-    UIButton *mtGuideTipBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    mtGuideTipBtn.frame = CGRectMake(tipBtnOrigin.x, tipBtnOrigin.y, MiTingGuideWidth, MiTingGuideHeight);
-    mtGuideTipBtn.backgroundColor = [UIColor clearColor];
-    [mtGuideTipBtn setImage:[UIImage imageNamed:@"push_miting_guide_iphone.png"] forState:UIControlStateNormal];
-    [mtGuideTipBtn addTarget:self action:@selector(removeMiTingGuideView) forControlEvents:UIControlEventTouchUpInside];
-    mtGuideTipBtn.tag = kMiTingGuideViewTag;
-    
-    [self.view addSubview:mtGuideTipBtn];
-    [self.view bringSubviewToFront:mtGuideTipBtn];
-    
-    //10秒后自动消失
-    [self performSelector:@selector(removeMiTingGuideView) withObject:self afterDelay:10];
-}
-
--(void)removeMiTingGuideView{
-    UIView *mtGuideBtn = [self.view viewWithTag:kMiTingGuideViewTag];
-    if (mtGuideBtn && [mtGuideBtn isKindOfClass:[UIButton class]]) {
-        [UIView animateWithDuration:0.35 animations:^{
-            mtGuideBtn.alpha = 0.0;
-            mtGuideBtn.transform = CGAffineTransformMakeScale(0.3, 0.3);
-            
-        } completion:^(BOOL finished) {
-            if (mtGuideBtn) {
-                if ([mtGuideBtn superview]) {
-                    [mtGuideBtn removeFromSuperview];
-                }
-            }
-        }];
-    }
 }
 
 @end
